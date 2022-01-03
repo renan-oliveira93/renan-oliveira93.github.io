@@ -27,6 +27,9 @@ h3{
 	background: #ccc;
 	padding: 5px;
 }
+img{
+	width: 30rem;
+}
 .branco{
 	color: white;
 }
@@ -42,16 +45,17 @@ a {
 	text-decoration: none;
 }
 #area-principal{
-	width: 920px;
+	display: flex;
+	flex-direction: row;	
+	width:95vw;
 	margin: 0 auto;
 	padding: 15px; 
 }
 #area-postagens{
-    width: 660px;
+    padding-right: 1rem;
     float: left;
 }
-#area-lateral{
-	width: 240px;
+#area-lateral{	
 	float: right;
 }
 #rodape{
@@ -81,6 +85,7 @@ a {
 	display: block;
 }
 .conteudo-lateral{
+	width: 15rem;
 	background: white; 
 	padding: 10px;
 	margin-bottom: 20px;
@@ -97,4 +102,19 @@ a {
 .conteudo-lateral a:hover{
 	color: #f7b600;
 	background:#ccc;
+}
+@media (max-width:767px) {
+	.conteudo-lateral{
+		display: none;
+	}		
+	#postagem{
+		width: 100vw;		
+	}
+	#area-cabecalho{
+		font-size: 2rem;
+		width: 160vw;
+	}
+	#rodape{
+		width: 160vw;
+	}
 }
